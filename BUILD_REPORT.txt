@@ -1,0 +1,34 @@
+WallDecor99 Build Report
+Generated: 2026-07-19
+
+Validation completed:
+- npm run lint: PASS
+- npm run build: PASS
+- TypeScript compile: PASS
+- Static generation: PASS (23 pages/routes)
+- Main route HTTP smoke tests: PASS
+- POST /api/calculator: PASS
+- POST /api/quotation: PASS
+
+Implemented routes:
+/
+/wallpapers
+/product/[slug] (8 seeded product paths)
+/calculator
+/customize
+/visualizer
+/cart
+/checkout
+/account
+/quotation/demo
+/admin
+/api/calculator
+/api/quotation
+
+Integration status:
+- Supabase database schema and RLS starter included; project credentials not connected.
+- Razorpay UI/integration boundary included; merchant credentials/webhook not connected.
+- WhatsApp deep links work after NEXT_PUBLIC_WHATSAPP_NUMBER is configured.
+- Customer uploads are browser-demo only until private Supabase storage is connected.
+- Quotation is printable; production document persistence/PDF worker is not connected.
+- Room visualizer has a manual fixed wall mask demo; point-based polygon/perspective editor remains a production integration step.
